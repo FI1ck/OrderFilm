@@ -77,7 +77,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     var people_images = [
         '../Images/people/Hayk_Ord.jpeg','../Images/people/Ani_ord.jpeg','../Images/people/Lusine.jpeg','../Images/people/Yervand.jpeg',
-        '../Images/people/arman_ayvazyan.jpeg','../Images/people/Garush.jpeg','../Images/people/Hayk.jpeg','../Images/people/Arman_ord.jpeg',
+        '../Images/people/arman_ayvazyan.jpeg','../Images/people/garush.jpg','../Images/people/Hayk.jpeg','../Images/people/Arman_ord.jpeg',
         '../Images/people/frunz.jpeg','../Images/people/Vahe.jpeg','../Images/people/Alina.jpeg','../Images/people/',
         '../Images/people/Ani.jpeg','../Images/people/Gayane.jpeg','../Images/people/Eva.jpeg','../Images/people/narek.jpg',
     ]
