@@ -1,0 +1,336 @@
+html{
+    scroll-behavior: smooth
+}
+
+@font-face {
+    font-family: Armenian;
+    src: url(fonts/arial.ttf);
+}
+
+@font-face {
+    font-family: TeamNames;
+    src: url(fonts/ArmHMK.TTF);
+}
+
+@font-face {
+    font-family: TeamNames_EN;
+    src:url(fonts/Team_EN);
+}
+
+::-webkit-scrollbar{
+    width: 6px;
+}
+
+::-webkit-scrollbar-track{
+    background-color: #000;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #0088FA;
+}
+
+#index{
+    background-color:#181818;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Helvetica, Arial, Armenian;
+    font-size: 16px;
+    color:#fff;
+    outline: none;
+    max-height: 999999px;
+    overflow-x: hidden;
+}
+
+#full_wrap{
+    min-width: 1200px;
+    position: relative;
+    z-index: 1;
+}
+
+.english{
+    display: none;
+}
+
+.header{
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 9999;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 70px;
+    box-sizing: border-box;
+    background-color: #000;
+}
+
+.header_nav{
+    height: 20px;
+    display: flex;
+}
+
+.header .nav_inner{
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: space-between;
+}
+
+.nav_lists{
+    position: absolute;
+    right: 170px;
+    display: flex;
+    height: 20px;
+    width: auto;
+    margin: 0;
+    padding: 0;
+}
+
+.nav_lists li a{
+    padding: 0 28px;
+    font-size: 16px;
+    font-weight: 400px;
+}
+
+.nav_lists li{
+    position: relative;
+    height: 20px;
+}
+
+.nav_lists li:before{
+    content:'';
+    width: 1px;
+    height: 20px;
+    background: #fff;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.nav_lists li:first-child:after{
+    content:'';
+    width: 1px;
+    height: 20px;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    top: 0;
+    
+}
+.nav_lists li a:hover {
+	color: #000;
+}
+.nav_lists li a:before {
+	content: "";
+	background-color: #fff;
+	width: 100%;
+	height: 20px;
+	margin: auto;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+    z-index: -1;
+	transform: scale(0, 1);
+    transform-origin: right top;
+    transition: transform .3s ease-in-out;
+}
+.nav_lists li a:hover:before {
+	transform-origin: left top;
+    transform: scale(1, 1);
+}
+
+.fw3{
+    font-weight: 300;
+}
+
+li{
+    list-style: none;
+}
+
+.nav_lists a{
+    display: inline-block;
+    white-space: nowrap;
+    color:#fff;
+    text-decoration: none;
+}
+
+
+.nav_lists span{
+    text-align: center;
+    font-size: 16px;
+}
+
+.social_list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 20px;
+    margin: 0;
+    padding: 0 20px 0 20px;
+    width: 60px;
+}
+
+.social_list li a span{
+    display: none;
+}
+
+.social_list li{
+    height: 20px;
+    width: 20px;
+}
+
+.social_list li a{
+    display: block;
+    height: 20px;
+}
+
+.social_yt a{
+    background: url(../Icons/youtube.png) no-repeat center center;
+    background-size: contain;
+}
+
+.social_fb{
+    background: url(../Icons/facebook.png) no-repeat center center;
+    background-size: contain;
+}
+
+.lang_list{
+    display: flex;
+    align-items: center;
+    width: 60px;
+    height: 20px;
+    border: 1px solid #fff;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+.lang_list li{
+    width: 30px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ .lang_list a{
+    text-decoration: none;
+    font-size: 10px;
+    font-family: Helvetica;
+    width: 30px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400px;
+    cursor: pointer;
+ }
+
+ #armenian_lang{
+    background-size: cover;
+ }
+
+ #english_lang{
+    color: #fff;
+ }
+/*#Header end*/
+
+.page_content{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+}
+
+#people_picture{
+    height: 100%;
+    width: 32%;
+    min-width: 28%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.text_part{
+    position: absolute;
+    bottom: 12px;
+    left: 24px;
+    z-index: 2;
+}
+
+#full_name{
+    font-size: 36px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: #fff;
+}
+
+#role{
+    display: block;
+    margin-top: 12px;
+    font-size: 16px;
+    font-weight: 100;
+    color: #fff;
+    letter-spacing: 1.5px;
+    width: 300px;
+}
+
+#projects{
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    padding: 80px 60px;
+    overflow-y: scroll;
+    width: 100%;
+    height: 100%;
+    justify-content:start ;
+    gap: 24px;
+    align-items: center;
+}
+
+.project{
+    margin-top: 24px;
+    position: relative;
+    width: 370px;
+    height: 520px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all .2s ease-in;
+}
+.project:hover{
+    filter: brightness(75%);
+    cursor: pointer;
+    transition: all .2s ease-in;
+}
+
+
+.project_name{
+    display: block;
+    font-size: 16px;
+    font-weight: 200;
+    margin-left: 8px;
+    margin-top: 8px;
+}
+
+#go_back_btn{
+    padding: 4px;
+    box-sizing: border-box;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    background-color: #000;
+    border-radius: 8px;
+    border: none;
+    background-image: url(../Icons/arrow_left.png);
+    background-repeat: no-repeat;
+    background-size: 40%;
+    background-position: center;
+    cursor: pointer;
+    top: 60px;
+    left: 24px;
+    z-index: 2;
+}

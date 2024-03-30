@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Films</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+    <script src="Team_members/team_members_main.js"></script>
+    <script defer src="show_animations.js"></script>
+</head>
+
+<body id="index">
+    <div id="full_wrap">
+        <header class="header">
+            <div class="logo">
+                <a href="#home" class="logo"></a>
+            </div>
+
+            <div class="header_menu_btn">
+                <a id="header_menu_btn_js">
+                    <div class="header_menu_lines">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </a>
+            </div>
+
+            <nav class="header_nav">
+                <div class="nav_inner js-nav_inner">
+                    <ul class="nav_lists fw3">
+                        <li>
+                            <a href="#home" class="nav_anchor js_cur_link2">
+                                <span class="armenian">Գլխավոր</span>
+                                <span class="english">Home</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#projects" class="nav_anchor js_cur_link2">
+                                <span class="armenian">Նախագծեր</span>
+                                <span class="english">Projects</span>
+                            </a>
+                        </li>
+                        <li>
+
+                            <a href="#services" class="nav_anchor js_cur_link2">
+                                <span class="armenian">Ծառայություններ</span>
+                                <span class="english">Services</span>
+                            </a>
+
+                        </li>
+                        <li>
+                            <a href="#au_pic_part" class="nav_anchor js_cur_link2">
+                                <span class="armenian">Մեր մասին</span>
+                                <span class="english">About us</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#team" class="nav_anchor js_cur_link2">
+                                <span class="armenian">Թիմը</span>
+                                <span class="english">Team</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#footer" class="nav_anchor js_cur_link2">
+                                <span class="armenian">Կապ մեզ հետ</span>
+                                <span class="english">Contact</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+                                <span id="english_btn_mb">English</span>
+                                <span id="lang_slash">/</span>
+                                <span id="armenian_btn_mb">Հայերեն</span>
+                                
+                            </a>
+                        </li>
+                    </ul>
+
+                    <ul class="social_list">
+                        <li class="social_yt">
+                            <a href="https://www.youtube.com/c/OrderFilmProduction" class="js_cur_link2"
+                                target="_blank">
+                                <span>Youtube</span>
+                            </a>
+                        </li>
+                        <li>
+                            <div class="social_deviding"></div>
+                        </li>
+                        <li class="social_fb">
+                            <a href="https://www.facebook.com/orderfilmpro/" class="js_cur_link2" target="_blank">
+                                <span>Facebook</span>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <ul class="lang_list">
+                        <li >
+                            <a id="english_lang">EN</a>
+                            
+                        </li>
+                        <li >
+                            <a id="armenian_lang">AM</a>
+                        </li>
+                    </ul>
+                    <div class="sp_header"></div>
+                </div>
+            </nav>
+        </header>
+        <div id="home">
+            <div class="bottom_content ">
+                <div class="bottom_left hidden">
+                    <span class="name"></span> <br>
+                    <span class="type"></span>
+                    <span class="date"></span>
+                </div>
+                <div class="bottom_center hidden">
+                    <a class="armenian" href="#projects">
+                        <span class="scroll_line"></span>
+                        <span class="scroll_line"></span>
+                        Իջնել
+                    </a>
+                    <a class="english" href="#projects">
+                        <span class="scroll_line"></span>
+                        <span class="scroll_line"></span>
+                        scroll
+                    </a>
+                </div>
+
+                <div class="bottom_rigth">
+                    <a id="video_prev"></a>
+                    <a id="video_next"></a>
+                    <a id="audio"></a>
+                </div>
+            </div>
+            <div class="video_background">
+                <video id="home_video" autoplay muted playsinline preload="auto">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="progress">
+                    <div class="progressbar" id="zulali_progressbar"></div>
+                </div>
+            </div>
+        </div>
+
+        <div id="projects">
+            <div class="project_upper_part">
+                <div class="header_text hidden">
+                    <h1 class="armenian ">ՆԱԽԱԳԾԵՐ</h1>
+                    <h1 class="english">PROJECTS</h1>
+                    <div id="project_filter"></div>
+                </div>
+                <form class="filter">
+                    <div class="filter_stroke">
+                        <input type="checkbox" name="films" class="filter_checkbox film_filter" checked>
+                        <label for="films" class="armenian">Գեղարվեստական</label>
+                        <label for="films" class="english">Feature</label>
+                    </div>
+
+                    <div class="filter_stroke">
+                        <input type="checkbox" name="documentary" class="filter_checkbox anim_filter" checked>
+                        <label for="documentary" class="armenian">Վավերագրական</label>
+                        <label for="documentary" class="english">Documentary</label>
+                    </div>
+
+                    <div class="filter_stroke">
+                        <input type="checkbox" name="TV" class="filter_checkbox tv_filter" checked>
+                        <label for="TV" class="armenian">Հեռուստատեսային</label>
+                        <label for="TV" class="english">Television</label>
+                    </div> 
+                </form>
+            </div>
+            
+            <div class="projects_content">
+                <div class="posters hidden">
+                    
+                </div>
+                <div class="indicators">
+                </div>
+
+                <div class="arrow_buttons">
+                    <button class="arrow_button" id="arrow_left"></button>
+                    <button class="arrow_button" id="arrow_right"></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="projects_unfinished">
+            <div class="header_text hidden">
+                <h1 class="armenian">ԸՆԹԱՑՔԻ ՄԵՋ</h1>
+                <h1 class="english">IN PROCCESS</h1>
+            </div>
+            <div class="projects_content">
+                <div class="posters_unfinished">
+                </div>
+            </div>
+        </div>
+
+        <div id="services">
+            <div class="header_text hidden">
+                <h1 class="armenian">ԾԱՌԱՅՈՒԹՅՈՒՆՆԵՐ</h1>
+                <h1 class="english">SERVICES</h1>
+            </div>
+
+            <div class="sv_content">
+                <div class="sv_content_block">
+                    <div class="sv_icons" id="filmart"></div>
+                    <div class="sv_text">
+                        <h1 class="armenian">Ֆիլմարտադրություն</h1>
+                        <h1 class="english">Film production</h1>
+                        <span class="armenian">
+                            Խաղարկային, վավերագրական և անիմացիոն ֆիլմեր
+                        </span>
+                        <span class="english">
+                            Feature, documentary and animated films
+                        </span>
+                    </div>
+                </div>
+                <div class="sv_content_block">
+                    <div class="sv_icons" id="hetart"></div>
+                    <div class="sv_text">
+                        <h1 class="armenian">Հետարտադրություն</h1>
+                        <h1 class="english">Post production</h1>
+                        <span class="armenian">
+                            Մոնտաժ, գունադրում և գունամշակում , ձայնամշակում, համակարգչային ձևավորում
+                        </span>
+                        <span class="english">
+                            Editing, coloring and color processing, sound processing, computer design
+                        </span>
+                    </div>
+                </div>
+                <div class="sv_content_block">
+                    <div class="sv_icons" id="prod_car"></div>
+                    <div class="sv_text" id="prod_car_text">
+                        <h1 class="armenian">Պրոդյուսերական Ծառայություններ</h1>
+                        <h1 class="english">Production Services</h1>
+                        <span class="armenian">
+                            Հայաստանում արտերկրի կինո և հեռուստաարտադրողների աշխատանքի կազմակերպում
+                        </span>
+                        <span class="english">
+                            Organization of work of foreign film and television producers in Armenia
+                        </span>
+                    </div>
+                </div>
+                <div class="sv_content_block">
+                    <div class="sv_icons" id="videos"></div>
+                    <div class="sv_text">
+                        <h1 class="armenian">Տեսահոլովակներ և Տեսանյութեր</h1>
+                        <h1 class="english">Videoclips</h1>
+                        <span class="armenian">
+                            Սոցիալական, կորպորատիվ և գովազդային տեսանյութերի պատրաստում
+                        </span>
+                        <span class="english">
+                            Production of social, corporate and promotional videos
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="au_pic_part">
+            <div id="au_pics"></div>
+            <div class="au_header hidden">
+                <span class="armenian">ՄԵՐ ՄԱՍԻՆ</span>
+                <span class="english">ABOUT US</span>
+            </div>
+        </div>
+
+        <div class="au_text_part hidden">    
+            <div class="au_text ">
+                <span class="au_text_header outlined armenian" >ՄԵՐ </span> <br>
+                <span class="au_text_header armenian">ՆՊԱՏԱԿԸ</span>
+                <span class="au_text_info armenian">
+                    «ՕՐԴԵՐ ՖԻԼՄ ՓՐՈԴԱՔՇՆ» ընկերությունը հիմնադրվել է 2019 թվականին: 
+                    <br>
+                    <br>
+                    Ընկերության առաջնային նպատակն է մեր երկրում նպաստել կինոարտադրությանը,
+                    համատեղ նախագծեր իրականացնել թե´ հայաստանյան, թե´ օտարերկրյա կինո և հեռուստաընկերությունների հետ:
+                </span>
+                <span class="au_text_header outlined english" >OUR </span> <br>
+                <span class="au_text_header english">GOAL</span> <br>
+                <span class="au_text_info english">
+                    "ORDER FILM PRODUCTION" company was founded in 2019.
+                    <br>
+                    <br>
+                    The primary goal of the company is to promote film production in our country.
+                    to implement joint projects with both Armenian and foreign cinema and TV companies.
+                </span>
+            </div>
+            <div class="au_text">
+                <span class="au_text_header outlined armenian" >ՄԵՐ </span> <br>
+                <span class="au_text_header armenian">ԱՌԱՔԵԼՈՒԹՅՈՒՆԸ</span>
+                <span class="au_text_info armenian">Մենք աշխատում ենք զարգացնել ֆիլմարտադրությունը Հայաստանում և համատեղ նախագծեր իրականացնել 
+                    տեղական, ինչպես նաև արտասահմանյան ֆիլմարտադրող և հեռուստատեսային ընկերությունների հետ:
+                </span>
+                <span class="au_text_header outlined english" >OUR</span> <br>
+                <span class="au_text_header english">MISSION</span>
+                <span class="au_text_info english">We are working to develop film production in Armenia and implement joint projects
+                    with local as well as foreign film and television companies.
+                </span>
+            </div>
+            <div class="au_text">
+                <span class="au_text_header outlined armenian" >ՄԵՐ </span> <br>
+                <span class="au_text_header armenian">ՆՎԱՃՈՒՄՆԵՐԸ</span>
+                <span class="au_text_info armenian">
+                    Salento միջազգային կինոփառատոն - «Լավագույն դերասանուհի» Հերմինե Ստեփանյան ,(Իտալիա, Սալենտո 2022)(Զուլալի) 
+                    <br><br>
+                    Գրականության և կինոյի միջազգային կինոփառատոն - «Լավագույն դերասանուհի» Մարինե Պետրոսյան (Աքիր),(Ռուսաստան, Սանկտ Պետերբուրգ, 2022 թ.)(Զուլալի)
+                    <br><br>
+                    Orvinio Cinema կինոփառատոն - «Լավագույն միջազգային ֆիլմ» (Իտալիա, Օրվինիո, օգոստոսի 23-30, 2023 թ.)(Զուլալի)
+                    <br><br>
+                    Ji.hlava վավերագրական ֆիլմերի միջազգային փառատոն - «New Vision Award»
+                    (Լիտվա, Վիլնյուս, 2023)(Դավիթի այգին)
+                </span>
+                <span class="au_text_header outlined english" >OUR</span> <br>
+                <span class="au_text_header english">NOMINATIONS</span>
+                <span class="au_text_info english">
+                    Salento International Film Festival - "Best Actress" Hermine Stepanyan, (Italy, Salento 2022) (Zulali)
+                    <br><br>
+                    International Film Festival of Literature and Cinema - "Best Actress" Marine Petrosyan (Akir), (Russia, St. Petersburg, 2022) (Zulali)
+                    <br><br>
+                    Orvinio Cinema Film Festival - "Best International Film" (Italy, Orvinio, August 23-30, 2023) (Zulali)
+                    <br><br>
+                    Ji.hlava International Documentary Film Festival - "New Vision Award"
+                    (Lithuania, Vilnius, 2023) (David's Garden)
+                </span>
+            </div>
+        </div>
+
+        <div id="team">
+            <div class="team_header hidden">
+                <span class="armenian">Մեր Թիմը</span>
+                <span class="english">OUR TEAM</span>
+                <div class="team_header_line">
+
+                </div>
+            </div>
+            <div class="team_names hidden">
+                <div class="team_stroke">
+                    <a href="Team_members/team_index.html">
+                        <span class="armenian team_name" >Հայկ Օրդյան</span>
+                        <span class="english team_name">Hayk Ordyan</span>
+                    </a>
+                    <a href="Team_members/team_index.html"> 
+                        <span class="armenian team_name">Անի Օրդյան</span>
+                        <span class="english team_name">Ani Ordyan</span>
+                    </a>
+                    <a href="Team_members/team_index.html">
+                        <span class="armenian team_name">Լուսինե Միրզոյան</span>
+                        <span class="english team_name">Lusine Mirzoyan</span>
+                    </a>
+                    <a href="Team_members/team_index.html"> 
+                        <span class="armenian team_name">Երվանդ Ռումյան</span>
+                        <span class="english team_name">Yervand Rumyan</span>
+                    </a>
+                </div>
+                <div class="team_stroke">
+                    <a href="Team_members/team_index.html">
+                        <span class="armenian team_name">Արման Այվազյան</span>
+                        <span class="english team_name">Arman Ayvazyan</span>
+                    </a>
+                    <a href="Team_members/team_index.html">
+                        <span class="armenian team_name">Գարուշ Ղազարյան</span>
+                        <span class="english team_name">Garush Ghazaryan</span>
+                    </a>
+                    <a href="Team_members/team_index.html">
+                        <span class="armenian team_name">Հայկ Մկրտչյան</span>
+                        <span class="english team_name">Hayk Mkrtchyan</span>
+                    </a>
+                    <a href="Team_members/team_index.html">
+                        <span class="armenian team_name">Արման Օրդյան</span>
+                        <span class="english team_name">Arman Ordyan</span>
+                    </a>
+                </div>
+                <div class="team_stroke">
+                    <a href="Team_members/team_index.html">
+                        <span class="armenian team_name">Ֆրունզիկ Զաքարյան</span>
+                        <span class="english team_name">Frunzik Zakaryan </span>
+                    </a>
+                    <a href="Team_members/team_index.html">
+                        <span class="armenian team_name">Վահե Տերտերյան</span>
+                        <span class="english team_name">Vahe Terteryan</span>
+                    </a>
+                    <a href="Team_members/team_index.html">
+                        <span class="armenian team_name">Ալինա Օրդյան</span>
+                        <span class="english team_name">Alina Ordyan</span>
+                    </a>
+                    <a href="Team_members/team_index.html"> 
+                        <span class="armenian team_name">Սառա Նալբանդյան</span>
+                        <span class="english team_name">Sara Nalbandyan</span>
+                    </a>
+                </div>
+                <div class="team_stroke">
+                    <a href="Team_members/team_index.html">
+                        <span class="armenian team_name">Անի Կապզմալյան</span>
+                        <span class="english team_name">Ani Kapzmalyan</span>
+                    </a>
+                    <a href="Team_members/team_index.html">
+                        <span class="armenian team_name">Գայանե Սարգսյան</span>
+                        <span class="english team_name">Gayane Sargsyan</span>
+                    </a>
+                    <a href="Team_members/team_index.html">
+                        <span class="armenian team_name">Եվա Սուքիասյան</span>
+                        <span class="english team_name">Yeva Suqiasyan</span>
+                    </a>
+                    <a href="Team_members/team_index.html">
+                        <span class="armenian team_name">Նարեկ Օրդյան</span>
+                        <span class="english team_name">Narek Ordyan</span>
+                    </a>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="partners">
+            <div class="partners_header">
+                <span class="armenian">ՄԵՐ ԳՈՐԾԸՆԿԵՐՆԵՐԸ</span>
+                <span class="english">OUR PARTNERS</span>
+            </div>
+            <div class="partners_content_all">
+                <div class="partners_line"></div>
+                <a href="https://ncca.am/en" target="_blank">
+                    <div class="partners_content">
+                        <div class="partners_logo"></div>
+                        <span class="partners_name"></span>
+                    </div>
+                </a>
+                <a href="https://www.1tv.am/en/" target="_blank"> 
+                    <div class="partners_content">
+                        <div class="partners_logo"></div>
+                        <div class="partners_name"></div>
+                    </div>
+                </a>
+                <a href="https://escs.am/am" target="_blank">
+                    <div class="partners_content" target="_blank">
+                        <div class="partners_logo"></div>
+                        <div class="partners_name"></div>
+                    </div>
+                </a>
+                <a href="https://darfoundation.am/ru/glavnaya/" target="_blank">
+                    <div class="partners_content">
+                        <div class="partners_logo"></div>
+                        <div class="partners_name"></div>
+                    </div>
+                </a>
+                <a href="https://www.facebook.com/p/Բերդ-Մշակույթի-Կենտրոն-ՄՀԿ-Berd-Mshakuyti-Kentron-100064670683505/?locale=cs_CZ&paipv=0&eav=AfbEYAppj_1aRg8njV48gtgLRmDJAJH3OUJvayX0rq8fz20lD6xG7fg2A73AK0YQXhc&_rdr" target="_blank">
+                    <div class="partners_content">
+                        <div class="partners_logo"></div>
+                        <div class="partners_name"></div>
+                    </div>
+                </a>
+                <a href="https://www.facebook.com/RealSchoolYerevan/" target="_blank">
+                    <div class="partners_content">
+                        <div class="partners_logo"></div>
+                        <div class="partners_name"></div>
+                    </div>
+                </a>
+                <a href="https://instigaterobotics.com/" target="_blank">
+                    <div class="partners_content">
+                        <div class="partners_logo"></div>
+                        <div class="partners_name"></div>
+                    </div>
+                </a>
+                <a href="https://www.facebook.com/fintaxcompany/?locale=ru_RU" target="_blank">
+                    <div class="partners_content">
+                        <div class="partners_logo"></div>
+                        <div class="partners_name"></div>
+                    </div>
+                </a>
+                <a href="https://www.facebook.com/p/Aharonyan-law-firm-LLC-100057525606366/" target="_blank">
+                    <div class="partners_content">
+                        <div class="partners_logo"></div>
+                        <div class="partners_name"></div>
+                    </div>
+                </a>
+                <a href="https://www.facebook.com/Background.evn/" target="_blank">
+                    <div class="partners_content">
+                        <div class="partners_logo"></div>
+                        <div class="partners_name"></div>
+                    </div>
+                </a>
+                <a href="https://www.univ-amu.fr/en" target="_blank">
+                    <div class="partners_content">
+                        <div class="partners_logo"></div>
+                        <div class="partners_name"></div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div id="contact">
+            <div class="contact_content">
+                <div class="contact_info hidden">
+                    <div class="contact_header armenian">Կապ մեզ հետ</div>
+                    <div class="contact_header english">Contact</div>
+                    <div class="contact_line"></div>
+                    <div class="contact_mobile_info">
+                        <div class="contact_inner_info">
+                            <div class="contact_stroke">
+                                <div class="contact_icon" id="place"></div>
+                                <span class="contact_text armenian">24/7 Վաղարշ Վաղարշյան փող․</span>
+                                <span class="contact_text armenian">Արաբկիր 0012</span>
+                                <span class="contact_text armenian">Երևան, ՀՀ</span>
+                                <span class="contact_text english">24/7 Vagharsh Vagharshyan St.</span>
+                                <span class="contact_text english">Arabkir 0012</span>
+                                <span class="contact_text english">Yerevan, Armenia</span>
+                            </div>
+                            <div class="contact_stroke">
+                                <div class="contact_icon" id="phone"></div>
+                                <span class="contact_text">+374 44 494 252</span>
+                            </div>
+                            <div class="contact_stroke">
+                                 <div class="contact_icon" id="mail"></div>
+                                <span class="contact_text">info@orderfilm.am</span>
+                            </div>
+                        </div>
+                        <div class="contact_socials">
+                            <ul class="ct_socials">
+                                <li>
+                                    <a href="https://www.facebook.com/orderfilmpro/" target="_blank" id="contact_facebook"></a>
+                                </li>
+                                <li>
+                                    <a href="https://www.instagram.com/orderfilm/" target="_blank" id="contact_instagram"></a>
+                                </li>
+                                <li>
+                                    <a href="https://www.youtube.com/c/orderfilmproduction" target="_blank" id="contact_youtube"></a>
+                                </li>
+                                <li>
+                                    <a href="https://t.me/orderfilmpro" target="_blank" id="contact_telegram"></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <iframe id="google_maps"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3047.208140405917!2d44.49722567596438!3d40.20443276853316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x406abd22f1da0b45%3A0xf084f79e53ff8727!2sORDER%20FILM%20PRODUCTION!5e0!3m2!1sen!2sam!4v1708507579561!5m2!1sen!2sam" 
+                width="400" height="355" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+
+        <footer id="footer">
+            <span>© 2019-2024 Order Film Production. All Rights Reserved</span>
+        </footer>
+    </div>
+</body>
+
+</html>
