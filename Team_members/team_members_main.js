@@ -188,58 +188,58 @@ document.addEventListener("DOMContentLoaded", function() {
             case 2:
             case 3:
                 people_projects_arr = [
+                    "../Images/komitas.png",
+                    "../Images/david.jpg",
                     "../Images/zulali.jpg",
-                    "../Images/Robert.png",
-                    "../Images/ohan.jpg",
-                    "../Images/mansuryan.png"
+                    "../Images/song_and_i.png",
+                    "../Images/kurwa1.jpg",
+                    "../Images/martakanon.jpg",
                 ];
                 break;
             case 4:
             case 5:
                 people_projects_arr = [
-                    "../Images/zulali.jpg",
-                    "../Images/Robert.png",
+                    "../Images/komitas.png",
+                    "../Images/dragonfly.jpg",
                     "../Images/ohan.jpg",
-                    "../Images/mansuryan.png"
                 ];
                 break;
             case 6:
             case 7:
                 people_projects_arr = [
-                "../Images/zulali.jpg",
-                "../Images/Robert.png",
-                "../Images/ohan.jpg",
-                "../Images/mansuryan.png"
+                    "../Images/komitas.png",
+                    "../Images/david.jpg",
+                    "../Images/ohan.jpg",
+                    "../Images/mansuryan.png",
             ];
             break;
 
             case 8:
             case 9:
                 people_projects_arr = [
-                    "../Images/zulali.jpg",
-                    "../Images/Robert.png",
-                    "../Images/ohan.jpg",
-                    "../Images/mansuryan.png"
+                    "../Images/dragonfly.jpg",
+                    "../Images/olimp.png",
+                    "../Images/martakanon.jpg",
                 ];
                 break;
 
             case 10:
             case 11:
                 people_projects_arr = [
-                    "../Images/zulali.jpg",
                     "../Images/david.jpg",
-                    "../Images/ohan.jpg",
-                    "../Images/mansuryan.png"
+                    "../Images/zulali.jpg",
+                    "../Images/kurwa1.jpg",
+                    "../Images/tatul.png",
+                    "../Images/svetlana.png",
                 ];
                 break;
 
             case 12:
             case 13:
                 people_projects_arr = [
-                    "../Images/zulali.jpg",
                     "../Images/Robert.png",
-                    "../Images/ohan.jpg",
-                    "../Images/mansuryan.png"
+                    "../Images/Gurgen.png",
+                    "../Images/mansuryan.png",
                 ];
                 break;
 
@@ -247,8 +247,6 @@ document.addEventListener("DOMContentLoaded", function() {
             case 15:
                 people_projects_arr = [
                     "../Images/zulali.jpg",
-                    "../Images/Robert.png",
-                    "../Images/ohan.jpg",
                     "../Images/mansuryan.png"
                 ];
                 break;
@@ -256,20 +254,24 @@ document.addEventListener("DOMContentLoaded", function() {
             case 16:
             case 17:
                 people_projects_arr = [
-                    "../Images/zulali.jpg",
-                    "../Images/Robert.png",
+                    "../Images/david.jpg",
                     "../Images/ohan.jpg",
-                    "../Images/mansuryan.png"
+                    "../Images/olimp.png",
+                    "../Images/song_and_i.png",
+                    "../Images/Gurgen.png",
+                    "../Images/martakanon.jpg",
                 ];
                 break;
 
             case 18:
             case 19:
                 people_projects_arr = [
-                    "../Images/zulali.jpg",
-                    "../Images/Robert.png",
+                    "../Images/david.jpg",
+                    "../Images/olimp.png",
                     "../Images/ohan.jpg",
-                    "../Images/mansuryan.png"
+                    "../Images/song_and_i.png",
+                    "../Images/kurwa1.jpg",
+                    "../Images/martakanon.jpg",
                 ];
                 break;
 
@@ -289,13 +291,18 @@ document.addEventListener("DOMContentLoaded", function() {
             case 22:
             case 23:
                 people_projects_arr = [
-                    
+                    "../Images/david.jpg",
+                    "../Images/zulali.jpg",
+                    "../Images/Gurgen.png",
+                    "../Images/kurwa1.jpg",
             ];
                 break;
 
             case 24:
             case 25:
-                people_projects_arr = ["../Images/zulali.jpg"];
+                people_projects_arr = [
+                    "../Images/zulali.jpg"
+                ];
                 break;
 
             case 26:
@@ -307,12 +314,17 @@ document.addEventListener("DOMContentLoaded", function() {
 
             case 28:
             case 29:
-                people_projects_arr = ["../Images/zulali.jpg"];
+                people_projects_arr = [
+                    "../Images/komitas.png",
+                    "../Images/david.jpg"
+                ];
                 break;
 
             case 30:
             case 31:
-                people_projects_arr = ["../Images/zulali.jpg"];
+                people_projects_arr = [
+                    "../Images/zulali.jpg"
+                ];
                 break;
 
             default:
@@ -340,10 +352,10 @@ document.addEventListener("DOMContentLoaded", function() {
         translateToEnglish();
     }
 
-    document.querySelectorAll('.project').forEach(function(poster) {
+    document.querySelectorAll('.project').forEach(poster => {
         poster.addEventListener('click', function(event) {
             clickedPoster = window.getComputedStyle(event.target).getPropertyValue('background-image');
-            localStorage.setItem("clickedPoster", clickedPoster);
+            localStorage.setItem('ClickedPoster', clickedPoster);
 
             
             // Do something with the clicked poster background
