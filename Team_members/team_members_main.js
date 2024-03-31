@@ -9,7 +9,6 @@ document.addEventListener("DOMContentLoaded", function() {
     var role_span = document.getElementById('role');
     var people_pic = document.getElementById('people_picture');
     var people_projects = document.getElementById('projects');
-    var clickedPoster;
 
     /*
         Projects
@@ -354,7 +353,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     document.querySelectorAll('.project').forEach(poster => {
         poster.addEventListener('click', function(event) {
-            clickedPoster = window.getComputedStyle(event.target).getPropertyValue('background-image');
+            let clickedPoster = window.getComputedStyle(event.target).getPropertyValue('background-image');
             localStorage.setItem('ClickedPoster', clickedPoster);
 
             
