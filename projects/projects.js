@@ -102,7 +102,7 @@ document.addEventListener("DOMContentLoaded", function() {
         if (activeLanguage == 'English') {
             if (imagePath == "Images/david.jpg") {
                 project_info = {
-                    background: `url(../${imagePath})`,
+                    background: `url(../Images/project_bg/david.png)`,
                     name: "Davids Garden",
                     format: "Full HD",
                     length: "92m",
@@ -201,7 +201,7 @@ document.addEventListener("DOMContentLoaded", function() {
             }
             else if (imagePath == "Images/mansuryan.png") {
                 project_info = {
-                    background: `url(../${imagePath})`,
+                    background: `url(../Images/project_bg/mansuryan.jpg)`,
                     name: "Maestro Mansuryan",
                     format: "Full HD",
                     length: "52m",
@@ -441,7 +441,7 @@ document.addEventListener("DOMContentLoaded", function() {
         else{
                 if (imagePath == "Images/david.jpg") {
                     project_info = {
-                        background: `url(../${imagePath})`,
+                        background: `url(../Images/project_bg/david.png)`,
                         name: "Դավիթի Այգին",
                         format: "Full HD",
                         length: "92ր",
@@ -540,7 +540,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 }
                 else if (imagePath == "Images/mansuryan.png") {
                     project_info = {
-                        background: `url(../${imagePath})`,
+                        background: `url(../Images/project_bg/mansuryan.jpg)`,
                         name: "Մաեստրո Մանսուրյան",
                         format: "Full HD",
                         length: "52ր",
