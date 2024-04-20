@@ -300,7 +300,8 @@ document.addEventListener("DOMContentLoaded", function() {
             case 24:
             case 25:
                 people_projects_arr = [
-                    "../Images/zulali.jpg"
+                    "../Images/zulali.jpg",
+                    "../Images/Robert.png"
                 ];
                 break;
 

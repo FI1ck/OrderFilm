@@ -206,7 +206,6 @@ document.addEventListener("DOMContentLoaded", function() {
         "Images/ohan.jpg",
         "Images/mansuryan.png",
         "Images/Gurgen.png",
-        "Images/song_and_i.png",
         "Images/martakanon.jpg", 
         "Images/kurwa1.jpg",
         "Images/olimp.png",
@@ -243,7 +242,8 @@ document.addEventListener("DOMContentLoaded", function() {
     ];
 
     const unfinished_posters_arr = [
-        "Images/komitas.png"
+        "Images/komitas.png",
+        "Images/song_and_i.png",
     ]
 
     const au_pics_arr = [

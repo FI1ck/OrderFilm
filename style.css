@@ -704,9 +704,9 @@ li{
 }
 
 .arrow_buttons{
-    width: 100%;
+    width: 474px;
     box-sizing: border-box;
-    padding: 0 70px;
+    padding: 0px;
     display: flex;
     justify-content: space-between;
     position: absolute;

@@ -103,7 +103,7 @@ document.addEventListener("DOMContentLoaded", function() {
             if (imagePath == "Images/david.jpg") {
                 project_info = {
                     background: `url(../Images/project_bg/david.png)`,
-                    name: "Davids Garden",
+                    name: "David's Garden",
                     format: "Full HD",
                     length: "92m",
                     ganre: "Feature",
@@ -122,7 +122,7 @@ document.addEventListener("DOMContentLoaded", function() {
             }
             else if (imagePath == "Images/zulali.jpg") {
                 project_info = {
-                    background: `url(../${imagePath})`,
+                    background: `url(../Images/project_bg/zulali.jpg)`,
                     name: "Zulali",
                     format: "2K",
                     length: "92m",
@@ -162,7 +162,7 @@ document.addEventListener("DOMContentLoaded", function() {
             }
             else if (imagePath == "Images/Robert.png") {
                 project_info = {
-                    background: `url(../${imagePath})`,
+                    background: `url(../Images/project_bg/robert.jpg)`,
                     name: "Robert Amirkhanyan: My Heart",
                     format: "Full HD",
                     length: "52m",
@@ -220,7 +220,7 @@ document.addEventListener("DOMContentLoaded", function() {
             }
             else if (imagePath == "Images/Gurgen.png") {
                 project_info = {
-                    background: `url(../${imagePath})`,
+                    background: `url(../Images/project_bg/gurgen.jpg)`,
                     name: "Gurgen Musheghyan: The Harmony of Space",
                     format: "Full HD",
                     length: "52m",
@@ -259,7 +259,7 @@ document.addEventListener("DOMContentLoaded", function() {
             }
             else if (imagePath == "Images/kurwa1.jpg") {
                 project_info = {
-                    background: `url(../${imagePath})`,
+                    background: `url(../Images/project_bg/kurva1.jpg)`,
                     name: "INSTIGATE ROBOTIC’S COMMERCIAL VIDEOS",
                     format: "Full HD",
                     length: "52m",
@@ -426,7 +426,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     plot: `Armenian priest Komitas, who achieves European fame as a singer and songwriter, concomitantly suffers the disasters of the early 20th century: war and genocide which drive him insane.`,
                     lang: "French, Armenian, Turkish, German",
                     subs: "English, Armenian",
-                    country: "Armenia, France, Georgia, Turkey",
+                    country: "Armenia",
                     director: "Hayk Ordyan",
                     screenplay: "Vahram Martirosyan",
                     dop: "Hayk Kirakosyan",
@@ -461,7 +461,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 }
                 else if (imagePath == "Images/zulali.jpg") {
                     project_info = {
-                        background: `url(../${imagePath})`,
+                        background: `url(../Images/project_bg/zulali.jpg)`,
                         name: "Զուլալի",
                         format: "2K",
                         length: "92ր",
@@ -501,7 +501,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 }
                 else if (imagePath == "Images/Robert.png") {
                     project_info = {
-                        background: `url(../${imagePath})`,
+                        background: `url(../Images/project_bg/robert.jpg)`,
                         name: "Սիրտն Իմ",
                         format: "Full HD",
                         length: "52ր",
@@ -559,7 +559,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 }
                 else if (imagePath == "Images/Gurgen.png") {
                     project_info = {
-                        background: `url(../${imagePath})`,
+                        background: `url(../Images/project_bg/gurgen.jpg)`,
                         name: "Գուրգեն Մուշեղյան։ Տարածության Հարմոնիա",
                         format: "Full HD",
                         length: "52ր",
@@ -598,7 +598,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 }
                 else if (imagePath == "Images/kurwa1.jpg") {
                     project_info = {
-                        background: `url(../${imagePath})`,
+                        background: `url(../Images/project_bg/kurva1.jpg)`,
                         name: "Ինսթիգեյթ Ռոբոտիքսի նաղագիծ",
                         format: "Full HD",
                         length: "52ր",
