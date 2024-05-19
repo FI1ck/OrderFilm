@@ -247,7 +247,7 @@ document.addEventListener("DOMContentLoaded", function() {
     ]
 
     const au_pics_arr = [
-        "Images/aboutUs1.png"
+        "Images/aboutUs1.jpg"
     ]
     
     const names = ["Դավիթի Այգին","Զուլալի", "Մաեստրո Մանսուրյան", "Գուրգեն Մուշեղյան", "Սիրտն Իմ"];

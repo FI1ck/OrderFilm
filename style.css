@@ -395,7 +395,7 @@ li{
 }
 
 #video_prev{
-    background-image: url(Icons/arrow_left.png);
+    background-image: url(Icons/left_arrow.svg);
     background-position: center;
     background-repeat: no-repeat;
     opacity: 50%;
@@ -405,7 +405,7 @@ li{
 }
 
 #video_next{
-    background-image: url(Icons/arrow_right.png);
+    background-image: url(Icons/right_arrow.svg);
     background-position: center;
     background-repeat: no-repeat;
     cursor: pointer;
@@ -536,6 +536,7 @@ li{
     background-repeat: no-repeat;
     margin-left: 70px;
     transition: 0.2s ease-in-out;
+    position: relative;
 }
 
 .projects_poster:first-child{
@@ -704,23 +705,24 @@ li{
 }
 
 .arrow_buttons{
-    width: 474px;
+    width: 100px;
     box-sizing: border-box;
     padding: 0px;
     display: flex;
     justify-content: space-between;
     position: absolute;
     z-index: 2;
-    bottom: 50%;
+    bottom: 0;
+    right: 70px;
 }
 
 .arrow_button{
-    width: 36px;
-    height: 36px;
+    width:32px;
+    height: 26px;
     border: none;
     background-color: transparent;
-    border-radius: calc(18px);
-    background-size: 12px;
+    border-radius: 5px;
+    background-size: 30px;
     background-repeat: no-repeat;
     background-position: center center;
     transition: 0.2s ease;
@@ -733,15 +735,15 @@ li{
 }
 
 #arrow_left{
-    background-image: url(Icons/arrow_left.png);
+    background-image: url(Icons/left_arrow.svg);
 }
 
 #arrow_right{
-    background-image: url(Icons/arrow_right.png);
+    background-image: url(Icons/right_arrow.svg);
 }
 
 #au_pic_part{
-    height: 100vh;
+    height: 80vh;
     width: 100%;
     margin-top: 64px;
     position: relative;
@@ -749,7 +751,7 @@ li{
 
 #au_pics{
     width: 100%;
-    height: 100vh;
+    height: 80vh;
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
