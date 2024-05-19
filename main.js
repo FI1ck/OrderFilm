@@ -191,7 +191,7 @@ document.addEventListener("DOMContentLoaded", function() {
         "Images/Partners/Dar.png",
         "Images/Partners/bmk.png",
         "Images/Partners/dproc.png",
-        "Images/Partners/instigate.png",
+        "Images/Partners/Instigate.png",
         "Images/Partners/fintax.png",
         "Images/Partners/aharonyan.png",
         "Images/Partners/background.png",
@@ -247,7 +247,7 @@ document.addEventListener("DOMContentLoaded", function() {
     ]
 
     const au_pics_arr = [
-        "Images/aboutUs1.jpg"
+        "Images/AboutUs1.jpg"
     ]
     
     const names = ["Դավիթի Այգին","Զուլալի", "Մաեստրո Մանսուրյան", "Գուրգեն Մուշեղյան", "Սիրտն Իմ"];
