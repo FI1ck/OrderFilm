@@ -602,7 +602,6 @@ document.addEventListener("DOMContentLoaded", function() {
         GetPostersContent(project_posters_films);
         GetPostersContent(project_posters_tv);
         GetPostersContent(project_posters_documentary);
-        GetBlurEffect(document.querySelectorAll('.projects_poster'), poster_index);
         updateArrowFilters(poster_index);
         GetIndicator(document.querySelectorAll('.indicator'), poster_index);
         GetauPics();
@@ -615,7 +614,6 @@ document.addEventListener("DOMContentLoaded", function() {
             checkbox.addEventListener('change', function(){
                 poster_index = 0;
                 handleFilmCheckboxes();
-                GetBlurEffect(document.querySelectorAll('.projects_poster'), poster_index );
                 GetIndicator(document.querySelectorAll('.indicator'), poster_index );
                 project_posters_container.scrollLeft = 0;
             })
@@ -627,7 +625,6 @@ document.addEventListener("DOMContentLoaded", function() {
             checkbox.addEventListener('change', function(){
                 poster_index = 0;
                 handleTVCheckboxes();
-                GetBlurEffect(document.querySelectorAll('.projects_poster'), poster_index );
                 GetIndicator(document.querySelectorAll('.indicator'), poster_index )
                 project_posters_container.scrollLeft = 0;
             })
@@ -639,7 +636,6 @@ document.addEventListener("DOMContentLoaded", function() {
             checkbox.addEventListener('change', function(){
                 poster_index = 0;
                 handleDocsCheckboxes();
-                GetBlurEffect(document.querySelectorAll('.projects_poster'), poster_index );
                 GetIndicator(document.querySelectorAll('.indicator'), poster_index )
                 project_posters_container.scrollLeft = 0;
             })
@@ -697,7 +693,6 @@ document.addEventListener("DOMContentLoaded", function() {
         if (doc_checkbox_unchecked) {
             DelIndicator(project_posters_documentary);
             DelPostersContent(project_posters_documentary);  
-            GetBlurEffect()
         }
     
         else if(!doc_checkbox_unchecked){
@@ -777,7 +772,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
         projects_right_arrow.addEventListener('click', function(){
             poster_index = (poster_index + 1) % document.querySelectorAll('.projects_poster').length;
-            GetBlurEffect(document.querySelectorAll('.projects_poster'), poster_index);
             GetIndicator(document.querySelectorAll('.indicator'), poster_index);
             updateArrowFilters(poster_index); 
             project_posters_container.scrollLeft += document.querySelectorAll('.projects_poster')[0].clientWidth + 70;
@@ -785,7 +779,6 @@ document.addEventListener("DOMContentLoaded", function() {
     
         projects_left_arrow.addEventListener('click', function(){
             poster_index = (poster_index - 1 + document.querySelectorAll('.projects_poster').length) % document.querySelectorAll('.projects_poster').length;
-            GetBlurEffect(document.querySelectorAll('.projects_poster'), poster_index);
             GetIndicator(document.querySelectorAll('.indicator'), poster_index);
             updateArrowFilters(poster_index);
             console.log(document.querySelectorAll('.projects_poster')[0].clientWidth)

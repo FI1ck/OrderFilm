@@ -130,7 +130,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     plot: `The story revolves around a small village located in a picturesque gorge. The villagers are involved in trade of all kinds at a market near the road. When possible, they cultivate the land. A family of three lives in a run-down house, ignoring the time that passes: the elderly housewife Mamida, a boy named Nazaros and his mother Zulali who has lost her mind. The film is composed of three parts in each of which the narration is done by one of the characters. Three different views on the ups and downs of life in the same time span are put together in a complex mosaic of tragic fate. The film is a drama, but it also incorporates comedy elements, thus exposing the entire spectrum of human feelings and relations.`,
                     lang: "Armenian",
                     country:"Armenia",
-                    subs: "English",
+                    subs: "English, Russian, French, Italian",
                     director: "Hayk Ordyan",
                     screenplay: "Astghik Simonyan",
                     dop: "Arman Ordyan",
