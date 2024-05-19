@@ -581,7 +581,6 @@ document.addEventListener("DOMContentLoaded", function() {
         GetPostersContent(project_posters_documentary);
         updateArrowFilters(poster_index);
         GetIndicator(document.querySelectorAll('.indicator'), poster_index);
-        GetauPics();
         GetPartnerLogos();
         GetPartnerNames();
 
@@ -791,7 +790,6 @@ document.addEventListener("DOMContentLoaded", function() {
         GetPostersContent(project_posters_documentary);
         project_posters_container.addEventListener('scroll', updateIndicators_Mobile);
         updateIndicators_Mobile();
-        GetauPics();
         GetPartnerLogos();
         GetPartnerNames();
 
