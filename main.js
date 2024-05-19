@@ -572,7 +572,6 @@ document.addEventListener("DOMContentLoaded", function() {
         
 
     if (screenWidth > 656) {
-        // Start playing the first video
         video.src = videoSources[currentVideoIndex];
         video.load();
         video.play();
