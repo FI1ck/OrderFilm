@@ -8,7 +8,6 @@ document.addEventListener("DOMContentLoaded", function() {
     var indicators = document.getElementsByClassName('indicators')[0];
     var projects_right_arrow = document.getElementById('arrow_right');
     var projects_left_arrow = document.getElementById('arrow_left');
-    var au_pics = document.getElementById('au_pics');
     var partners_logo = document.getElementsByClassName('partners_logo');
     var partners_name = document.getElementsByClassName('partners_name');
     var armenian_button = document.getElementById('armenian_lang');
@@ -25,7 +24,6 @@ document.addEventListener("DOMContentLoaded", function() {
     var video_prev_btn = document.getElementById('video_prev');
     var video_next_btn = document.getElementById('video_next');
     var audio_btn = document.getElementById('audio');
-    var au_pics_interval;
     var activeLanguage = localStorage.getItem('activeLanguage') || 'English';
     var clickedPoster;
     localStorage.setItem('activeLanguage', activeLanguage);
@@ -245,10 +243,6 @@ document.addEventListener("DOMContentLoaded", function() {
         "Images/komitas.png",
         "Images/song_and_i.png",
     ]
-
-    const au_pics_arr = [
-        "Images/AboutUs1.jpg"
-    ]
     
     const names = ["Դավիթի Այգին","Զուլալի", "Մաեստրո Մանսուրյան", "Գուրգեն Մուշեղյան", "Սիրտն Իմ"];
     const namesEN = ["David's Garden", "Zulali", "Maestro Mansuryan", "Gurgen Musheghyan", "My Heart"];
@@ -262,7 +256,6 @@ document.addEventListener("DOMContentLoaded", function() {
     let poster_index = 0;
     let currentVideoIndex = 0;
     let video_duration = 0;
-    var au_pics_index = 0;
     var filter_count = 1;
     let mute_click_count = 0;
 
@@ -310,10 +303,6 @@ document.addEventListener("DOMContentLoaded", function() {
         filter_count++;
         
     })
-
-    function GetauPics(){
-        au_pics.style.backgroundImage = "url(" + au_pics_arr[au_pics_index] + ")";
-    }
 
     function GetNames(){
         console.log("Setting name:", names[currentVideoIndex]);
@@ -444,18 +433,6 @@ document.addEventListener("DOMContentLoaded", function() {
         translateToEnglish();
     }
     /*
-    function startAuInterval() {
-        au_pics_interval = setInterval(function(){
-            au_pics_index = (au_pics_index + 1) % au_pics_arr.length;
-            GetauPics();
-        }, 10000);
-    }
-
-    function resetAuInterval(){
-        resetInterval(au_pics_interval);
-        startAuInterval();
-    }
-
     
     function startInterval(){
         projects_interval = setInterval(function(){

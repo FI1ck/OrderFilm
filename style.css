@@ -755,6 +755,7 @@ li{
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
+    background-image: url(Images/AboutUs1.jpg);
     transition: background .5s linear;
     
 }
@@ -1572,7 +1573,7 @@ li{
     }
 
     #au_pics{
-        z-index: 1;
+        background-image: url(Images/AboutUs2.png);
     }
 
     .au_header{
