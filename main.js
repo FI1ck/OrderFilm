@@ -235,7 +235,6 @@ document.addEventListener("DOMContentLoaded", function() {
         "Images/ohan.jpg",
         "Images/mansuryan.png",
         "Images/Gurgen.png",
-        "Images/song_and_i.png",
         "Images/kurwa1.jpg",
     ];
 
