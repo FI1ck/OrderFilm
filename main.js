@@ -334,10 +334,10 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     }
 
-    function GetBlurEffect(arr, count) {
+    function GetDarkEffect(arr, count) {
         for (let i = 0; i < arr.length; i++) {
             if (i !== count) {
-                arr[i].style.filter = "opacity(50%) blur(2px)";
+                arr[i].style.filter = "opacity(30%)";
                 arr[i].style.pointerEvents = 'none';
             } else {
                 arr[i].style.filter = "none";
@@ -581,6 +581,7 @@ document.addEventListener("DOMContentLoaded", function() {
         GetIndicator(document.querySelectorAll('.indicator'), poster_index);
         GetPartnerLogos();
         GetPartnerNames();
+        GetDarkEffect(document.getElementsByClassName("projects_poster"), poster_index);
 
         let filmcheckboxes = Array.from(film_checkboxes);
 
@@ -589,6 +590,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 poster_index = 0;
                 handleFilmCheckboxes();
                 GetIndicator(document.querySelectorAll('.indicator'), poster_index );
+                GetDarkEffect(document.getElementsByClassName("projects_poster"), poster_index);
                 project_posters_container.scrollLeft = 0;
             })
         });
@@ -600,6 +602,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 poster_index = 0;
                 handleTVCheckboxes();
                 GetIndicator(document.querySelectorAll('.indicator'), poster_index )
+                GetDarkEffect(document.getElementsByClassName("projects_poster"), poster_index);
                 project_posters_container.scrollLeft = 0;
             })
         });
@@ -611,6 +614,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 poster_index = 0;
                 handleDocsCheckboxes();
                 GetIndicator(document.querySelectorAll('.indicator'), poster_index )
+                GetDarkEffect(document.getElementsByClassName("projects_poster"), poster_index);
                 project_posters_container.scrollLeft = 0;
             })
         });
@@ -748,6 +752,7 @@ document.addEventListener("DOMContentLoaded", function() {
             poster_index = (poster_index + 1) % document.querySelectorAll('.projects_poster').length;
             GetIndicator(document.querySelectorAll('.indicator'), poster_index);
             updateArrowFilters(poster_index); 
+            GetDarkEffect(document.getElementsByClassName("projects_poster"), poster_index);
             project_posters_container.scrollLeft += document.querySelectorAll('.projects_poster')[0].clientWidth + 70;
         });
     
@@ -755,6 +760,7 @@ document.addEventListener("DOMContentLoaded", function() {
             poster_index = (poster_index - 1 + document.querySelectorAll('.projects_poster').length) % document.querySelectorAll('.projects_poster').length;
             GetIndicator(document.querySelectorAll('.indicator'), poster_index);
             updateArrowFilters(poster_index);
+            GetDarkEffect(document.getElementsByClassName("projects_poster"), poster_index);
             console.log(document.querySelectorAll('.projects_poster')[0].clientWidth)
             project_posters_container.scrollLeft -= document.querySelectorAll('.projects_poster')[0].clientWidth + 70;
         });
