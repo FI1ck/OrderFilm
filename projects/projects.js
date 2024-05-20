@@ -265,7 +265,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     length: "52m",
                     ganre: "Feature",
                     plot: `Our company together with “Instigate Robotics” has shot commercials for "Human Voice Beamforming System" and "Gunshot Detection System" devices. They are intended for an international audience.`,
-                    lang: "English",
+                    lang: "Armenian",
                     country:"Armenia",
                     subs: "-",
                     director: "Garush Ghazaryan",
@@ -287,7 +287,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     plot: `2023 թվականի ծանրամարտի Եվրոպայի առաջնություն`,
                     lang: "Armenian",
                     country:"Armenia",
-                    subs: "-",
+                    subs: "English",
                     director: "Arman Ayvazyan",
                     screenplay: "Vahagn Zakaryan",
                     dop: "Frunzik Zaqaryan",
@@ -424,7 +424,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     length: "120m",
                     ganre: "Feature",
                     plot: `Armenian priest Komitas, who achieves European fame as a singer and songwriter, concomitantly suffers the disasters of the early 20th century: war and genocide which drive him insane.`,
-                    lang: "French, Armenian, Turkish, German",
+                    lang: "Armenian, French, Turkish, German",
                     subs: "English, Armenian",
                     country: "Armenia",
                     director: "Hayk Ordyan",
@@ -447,12 +447,12 @@ document.addEventListener("DOMContentLoaded", function() {
                         length: "49ր",
                         ganre: "Վավերագրական",
                         plot: `«Դավթի այգին» 49 րոպե տևողությամբ վավերագրական ֆիլմ է պատերազմում իր մանկահասակ որդուն կորցրած հոր տառապանքների և որդու անավարտ երազանքների իրականացման ճանապարհորդության մասին։`,
-                        lang: "Անգլերեն",
+                        lang: "Հայերեն",
                         country:"Հայաստան",
                         subs: "Անգլերեն, Հայերեն",
                         director: "Գարուշ Ղազարյան",
                         screenplay: "Ալինա Օրդյան, Սառա Նալբանդյան",
-                        dop: "Վահե Տերտերյան, Ֆրունզիկ Զաքարյան, Եդգար Հարությունյան",
+                        dop: "Վահե Տերտերյան, Ֆրունզիկ Զաքարյան, Էդգար Հարությունյան",
                         producer: "Հայկ Օրդյան",             
                     }
                 
@@ -512,7 +512,7 @@ document.addEventListener("DOMContentLoaded", function() {
                         subs: "Անգլերեն, Ռուսերեն",
                         director: "Հայկ Մկրտչյան",
                         screenplay: "Պավել Սելին",
-                        dop: "Եդգար Հարությունյան",
+                        dop: "Էդգար Հարությունյան",
                         producer: "Հայկ Օրդյան",            
                     }
     
@@ -570,7 +570,7 @@ document.addEventListener("DOMContentLoaded", function() {
                         subs: "Անգլերեն, Ռուսերեն",
                         director: "Հայկ Մկրտչյան",
                         screenplay: "Սառա Նալբանդյան",
-                        dop: "Եդգար Հարությունյան",
+                        dop: "Էդգար Հարությունյան",
                         producer: "Հայկ Օրդյան",              
                     }
     
@@ -604,7 +604,7 @@ document.addEventListener("DOMContentLoaded", function() {
                         length: "52ր",
                         ganre: "Վավերագրական",
                         plot: `Մեր ընկերությունը «Ինսթիգեյթ Ռոբոտիքս»-ի հետ համատեղ նկարահանել է “Human Voice Beamforming System” և “Gunshot Detection System” սարքերը ներկայացնող գովազդային հոլովակները։ Դրանք նախատեսված են միջազգային լսարանի համար։`,
-                        lang: "Անգլերեն",
+                        lang: "Հայերեն",
                         country:"Հայաստան",
                         subs: "-",
                         director: "Գարուշ Ղազարյան",
@@ -626,7 +626,7 @@ document.addEventListener("DOMContentLoaded", function() {
                         plot: `2023 Europian Weightlifting Championships`,
                         lang: "Հայերեն",
                         country:"Հայաստան",
-                        subs: "-",
+                        subs: "Անգլերեն",
                         director: "Արման Այվազյան",
                         screenplay: "Վահագն Զաքարյան",
                         dop: "Ֆրունզիկ Զաքարյան",
@@ -638,7 +638,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 else if (imagePath == "Images/martakanon.jpg") {
                     project_info = {
                         background: `url(../${imagePath})`,
-                        name: "Մարտականոն",
+                        name: "ՄարտականON",
                         format: "Full HD",
                         length: "52ր",
                         ganre: "Վավերագրական",
@@ -648,7 +648,7 @@ document.addEventListener("DOMContentLoaded", function() {
                         subs: "Անգլերեն, Ռուսերեն",
                         director: "Արման Այվազյան",
                         screenplay: "Անի Օրդյան",
-                        dop: "Եդգար Հարությունյան, Ֆրունզիկ Զաքարյան",
+                        dop: "Էդգար Հարությունյան, Ֆրունզիկ Զաքարյան",
                         producer: "Հայկ Օրդյան",             
                     }
     
@@ -668,7 +668,7 @@ document.addEventListener("DOMContentLoaded", function() {
                         subs: "Անգլերեն, Ռուսերեն",
                         director: "Գարուշ Ղազարյան",
                         screenplay: "Ալինա Օրդյան",
-                        dop: "Եդգար Հարությունյան",
+                        dop: "Էդգար Հարությունյան",
                         producer: "Հայկ Օրդյան",             
                     }
     
@@ -688,7 +688,7 @@ document.addEventListener("DOMContentLoaded", function() {
                         subs: "Անգլերեն, Ռուսերեն",
                         director: "Հայկ Օրդյան",
                         screenplay: "Սոսի Խանիկյան",
-                        dop: "Եդգար Հարությունյան",
+                        dop: "Էդգար Հարությունյան",
                         producer: "Հայկ Օրդյան",             
                     }
     
@@ -708,7 +708,7 @@ document.addEventListener("DOMContentLoaded", function() {
                         subs: "Անգլերեն, Ռուսերեն",
                         director: "Աստղիկ Ղազարյան",
                         screenplay: "Ալինա Օրդյան",
-                        dop: "Եդգար Հարությունյան",
+                        dop: "Էդգար Հարությունյան",
                         producer: "Հայկ Օրդյան",         
                     }
     
@@ -728,7 +728,7 @@ document.addEventListener("DOMContentLoaded", function() {
                         subs: "Անգլերեն, Ռուսերեն",
                         director: "Աստղիկ Ղազարյան",
                         screenplay: "Ալինա Օրդյան",
-                        dop: "Եդգար Հարությունյան",
+                        dop: "Էդգար Հարությունյան",
                         producer: "Հայկ Օրդյան",             
                     }
     
@@ -748,7 +748,7 @@ document.addEventListener("DOMContentLoaded", function() {
                         subs: "Անգլերեն, Ռուսերեն",
                         director: "Գարուշ Ղազարյան",
                         screenplay: "Տիգրան Սիրունյան",
-                        dop: "Եդգար Հարությունյան",
+                        dop: "Էդգար Հարությունյան",
                         producer: "Հայկ Օրդյան",             
                     }
     
@@ -763,7 +763,7 @@ document.addEventListener("DOMContentLoaded", function() {
                         length: "120ր",
                         ganre: "Գեղարվեստական",
                         plot: `Հայ քահանա Կոմիտասը, ով եվրոպական հռչակ է ձեռք բերել որպես երգիչ և երգահան, միաժամանակ տառապում է 20-րդ դարասկզբի արհավիրքներից՝ պատերազմից և ցեղասպանությունից, որոնք նրան խելագարության են հասցնում:`,
-                        lang: "Ֆրանսերեն, Հայերեն, Թուրքերեն, Գեռմաներեն",
+                        lang: "Հայերեն, Ֆրանսերեն, Թուրքերեն, Գեռմաներեն",
                         country:"Հայաստան",
                         subs: "Անգլերեն, Հայերեն",
                         director: "Հայկ Օրդյան",
