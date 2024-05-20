@@ -614,7 +614,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 poster_index = 0;
                 handleDocsCheckboxes();
                 GetIndicator(document.querySelectorAll('.indicator'), poster_index )
-                GetDarkEffect(document.getElementsByClassName("projects_poster"), poster_index);
+                GetDarkEffect(document.querySelectorAll('.projects_poster'), poster_index);
                 project_posters_container.scrollLeft = 0;
             })
         });
@@ -752,7 +752,7 @@ document.addEventListener("DOMContentLoaded", function() {
             poster_index = (poster_index + 1) % document.querySelectorAll('.projects_poster').length;
             GetIndicator(document.querySelectorAll('.indicator'), poster_index);
             updateArrowFilters(poster_index); 
-            GetDarkEffect(document.getElementsByClassName("projects_poster"), poster_index);
+            GetDarkEffect(document.querySelectorAll('.projects_poster'), poster_index);
             project_posters_container.scrollLeft += document.querySelectorAll('.projects_poster')[0].clientWidth + 70;
         });
     
@@ -760,7 +760,7 @@ document.addEventListener("DOMContentLoaded", function() {
             poster_index = (poster_index - 1 + document.querySelectorAll('.projects_poster').length) % document.querySelectorAll('.projects_poster').length;
             GetIndicator(document.querySelectorAll('.indicator'), poster_index);
             updateArrowFilters(poster_index);
-            GetDarkEffect(document.getElementsByClassName("projects_poster"), poster_index);
+            GetDarkEffect(document.querySelectorAll('.projects_poster'), poster_index);
             console.log(document.querySelectorAll('.projects_poster')[0].clientWidth)
             project_posters_container.scrollLeft -= document.querySelectorAll('.projects_poster')[0].clientWidth + 70;
         });
