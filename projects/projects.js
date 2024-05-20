@@ -289,7 +289,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     country:"Armenia",
                     subs: "-",
                     director: "Arman Ayvazyan",
-                    screenplay: "",
+                    screenplay: "Vahagn Zakaryan",
                     dop: "Frunzik Zaqaryan",
                     producer: "Hayk Ordyan",             
                 }
@@ -628,7 +628,7 @@ document.addEventListener("DOMContentLoaded", function() {
                         country:"Հայաստան",
                         subs: "-",
                         director: "Արման Այվազյան",
-                        screenplay: "",
+                        screenplay: "Վահագն Զաքարյան",
                         dop: "Ֆրունզիկ Զաքարյան",
                         producer: "Հայկ Օրդյան",             
                     }
