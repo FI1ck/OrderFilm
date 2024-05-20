@@ -288,10 +288,10 @@ document.addEventListener("DOMContentLoaded", function() {
                     lang: "Armenian",
                     country:"Armenia",
                     subs: "-",
-                    director: "",
+                    director: "Arman Ayvazyan",
                     screenplay: "",
-                    dop: "",
-                    producer: "",             
+                    dop: "Frunzik Zaqaryan",
+                    producer: "Hayk Ordyan",             
                 }
 
                 SetInfo();
@@ -485,7 +485,7 @@ document.addEventListener("DOMContentLoaded", function() {
                         name: "Դրագոնֆլայ",
                         format: "Full HD",
                         length: "8ր",
-                        ganre: "Գեղարվեստական",
+                        ganre: "Վավերագրական",
                         plot: `"Դրագոնֆլայ"-ը բանաստեղծական այլաբանություն է լույսի և խավարի պայքարի, մահվան հաղթահարման և կյանքի վերածննդի մասին։`,
                         lang: "-",
                         country:"Ռուսաստան",
@@ -624,13 +624,13 @@ document.addEventListener("DOMContentLoaded", function() {
                         length: "52ր",
                         ganre: "Վավերագրական",
                         plot: `2023 Europian Weightlifting Championships`,
-                        lang: "Անգլերեն",
+                        lang: "Հայերեն",
                         country:"Հայաստան",
-                        subs: "Հայերեն, Անգլերեն, Ռուսերեն, Ֆրանսերեն, Իսպաներեն",
-                        director: "",
+                        subs: "-",
+                        director: "Արման Այվազյան",
                         screenplay: "",
-                        dop: "",
-                        producer: "",             
+                        dop: "Ֆրունզիկ Զաքարյան",
+                        producer: "Հայկ Օրդյան",             
                     }
     
                     SetInfo();
