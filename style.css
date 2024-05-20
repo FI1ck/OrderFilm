@@ -1458,7 +1458,7 @@ li{
     }
 
     #projects{
-        height: fit-content;
+        height: 100vh;
     }
 
     .filter{
@@ -1544,7 +1544,7 @@ li{
     }
 
     .projects_content{
-        height: 350px;
+        height: 600px;
     }
 
     .header_text h1{
