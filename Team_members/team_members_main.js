@@ -64,14 +64,14 @@ document.addEventListener("DOMContentLoaded", function() {
         'Տնօրեն','Գործադիր Պրոդյուսեր','Գործադիր Պրոդյուսեր','Ռեժիսոր',
         'Ռեժիսոր','Ռեժիսոր','Ռեժիսոր','Օպերատոր',
         'Օպերատոր','Օպերատոր','Սցենարիստ','Սցենարիստ',
-        'Ռեժիսորի Ասիստենտ','Գծային Պրոդյուսեր','Գծային Պրոդյուսեր','Տեխնիկական Սպասարկող',
+        'Ռեժիսորի Ասիստենտ','Գծային Պրոդյուսեր','Գծային Պրոդյուսեր','Ասիստենտ',
     ]
 
     var roles_EN = [
         'CEO','Executive Producer','Executive Producer','Director',
         'Director','Director','Director','Director of Photography',
         'Director of Photography','Director of Photography','Screenwriter','Screenwriter',
-        'Director Assistant','Line Producer','Line Producer','Tech Support',
+        'Director Assistant','Line Producer','Line Producer','Assistant',
     ]
 
     var people_images = [
